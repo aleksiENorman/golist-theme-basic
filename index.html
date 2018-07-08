@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Golist</title>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/list.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <h1>Golist</h1>
+    <button id="add-link">New thread</button>
+    <ul id="golist-body"></ul>
+    <div id="golist-edit" class="hidden">
+        <form name="golist" id="golist-edit" method="post" enctype="multipart/form-data" target="/">
+            <div id="notify-area"></div>
+            <input name="objectId" type="hidden" value="" id="objectid-input"  />
+            <input placeholder="Thread name..." name="series" type="text" id="series-input" />
+            <textarea placeholder="Message..." name="message" id="message-input"></textarea>
+            <div class="actions">
+                <button class="cancel">Cancel</button>
+                <input type="submit" class="submit" name="submit" value="Add"/>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        window.list.init();
+        window.list.updateIndex();
+    </script>
+</body>
+</html>

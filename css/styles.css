@@ -1,0 +1,59 @@
+#golist-edit form input[type="text"],
+#golist-edit form textarea {
+    display: block;
+    margin-bottom: 0.5em;
+    width: 100%;
+    font-size:11pt;
+    padding:0.25em;
+}
+
+h1 {
+    margin: 0.67em 0 0.2em 0;
+}
+
+#golist-body span.ui-delete,
+#golist-body span.ui-edit,
+#golist-body span.ui-expand  {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.actions {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.actions button, .actions input {
+    display:inline-block;
+    margin: 1em 0.5em;
+    width: 12em;
+}
+
+ul#golist-body {
+    list-style: outside none;
+    padding: 0.4em;
+    margin: 0;
+}
+
+ul#golist-body li.ui-menu-item {
+    padding: 0.4em;
+    margin: 0.2em 0;
+    border: 1px solid #ddd;
+    background-color: #f8faf8;
+}
+
+ul#golist-body li ul {
+    list-style: outside none;
+}
+
+ul#golist-body li.ui-menu-subitem {
+    margin: 0.225em;
+}
+
+.hidden {
+    display:none;
+}
+
+input[readonly] {
+    background-color: #ddd;
+}
